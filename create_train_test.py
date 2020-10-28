@@ -58,7 +58,7 @@ def move_files(file_groups, data_dir='data/videos/'):
                 continue
 
             # Move it.
-            dest = os.path.join(group, classname, filename)
+            dest = os.path.join(group, classname, parts[1])
             print("Moving %s to %s" % (filename, dest))
             os.rename(filename, dest)
 
